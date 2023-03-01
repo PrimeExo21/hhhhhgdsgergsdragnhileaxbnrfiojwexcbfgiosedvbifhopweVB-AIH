@@ -1,0 +1,75 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/cat"))() 
+local Window = Library:CreateWindow("PrimeExo Hub", Vector2.new(492, 598), Enum.KeyCode.RightControl)
+local AimingTab = Window:CreateTab("Main")
+local testSection = AimingTab:CreateSector("AutoFarm (Put sword on)", "left")
+testSection:AddButton("AutoFarm Logs (PUT SWORD ON)", function(IhateGayPeople)
+    _G.hit = true
+        while _G.hit == true do 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Live:GetChildren()[13].HumanoidRootPart.CFrame
+        print("monkey")
+        wait()
+       local args = {
+    [1] = false,
+    [2] = Vector3.new(-10239.326171875, -1144.094970703125, 8204.5908203125),
+    [3] = CFrame.new(-10239.3262, -1144.09497, 8204.59082, -0.548017323, -0.124077894, 0.827213228, -0, 0.98893714, 0.148335665, -0.836467028, 0.0812905133, -0.541954637)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BladeCombatRemote"):FireServer(unpack(args))
+        wait()
+        end
+end)
+
+testSection:AddButton("AutoFarm Bandits", function(IhateGayPeople)
+    _G.hit = true
+        while _G.hit == true do 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Live:GetChildren()[96].HumanoidRootPart.CFrame
+        print("monkey")
+        wait()
+       local args = {
+    [1] = false,
+    [2] = Vector3.new(-10239.326171875, -1144.094970703125, 8204.5908203125),
+    [3] = CFrame.new(-10239.3262, -1144.09497, 8204.59082, -0.548017323, -0.124077894, 0.827213228, -0, 0.98893714, 0.148335665, -0.836467028, 0.0812905133, -0.541954637)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BladeCombatRemote"):FireServer(unpack(args))
+        wait()
+        end
+
+end)
+
+
+testSection:AddButton("AutoFarm agni's minion ", function(IhateGayPeople)
+    _G.hit = true
+        while _G.hit == true do 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Live["Agni's Minion"].HumanoidRootPart.CFrame
+        print("monkey")
+        wait()
+       local args = {
+    [1] = false,
+    [2] = Vector3.new(-10239.326171875, -1144.094970703125, 8204.5908203125),
+    [3] = CFrame.new(-10239.3262, -1144.09497, 8204.59082, -0.548017323, -0.124077894, 0.827213228, -0, 0.98893714, 0.148335665, -0.836467028, 0.0812905133, -0.541954637)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BladeCombatRemote"):FireServer(unpack(args))
+        wait()
+        end
+end)
+
+
+
+local AimingTab = Window:CreateTab("Misc") 
+local testSection = AimingTab:CreateSector("Walkspeed", "right") 
+testSection:AddSlider("walkspeed", 0, 0, 100, 1, function(State)
+   wait()
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100   
+end)
+
+testSection:AddToggle("inf jump", false, function(first)
+   wait()
+   local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
